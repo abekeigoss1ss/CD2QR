@@ -110,7 +110,8 @@
             return;
         }
 
-        const baseUrl = window.location.origin + window.location.pathname;
+        // 固定の公開用URLを指定
+        const baseUrl = "https://abekeigoss1ss.github.io/CD2QR/";
         const targetUrl = baseUrl + '?name=' + encodeURIComponent(name) + '&grade=' + encodeURIComponent(grade) + '&gender=' + encodeURIComponent(gender) + '&req=' + encodeURIComponent(req);
 
         // QRコード描画
